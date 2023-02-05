@@ -12,7 +12,7 @@ $("#search-button").on("click", function(event) {
     event.preventDefault();
     let city = $("#search-input").val();
     let apiKey = "8e9760a756f0817505cdfc5d9f264228";
-    let queryUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey + "&units=imperial";
+    let queryUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey + "&units=metric";
 
     $.ajax({
         url: queryUrl,
